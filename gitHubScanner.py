@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#  python .\gitHubScanner.py --query "Pump.Fun-Sniper-Bot" --min_stars 100 --pages 3 --output ".\githubReposSearch\pumpfunSniperBot.csv"
+#  python .\gitHubScanner.py --query "Ai repos" --min_stars 100 --pages 3 --output ".\githubReposSearch\ai repos.csv"
 import argparse
 import requests
 import os
@@ -9,7 +9,7 @@ import csv
 # ================================
 # GitHub API Setup 
 # ================================
-GITHUB_TOKEN =  "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" # os.environ.get('GITHUB_TOKEN')  # Retrieve GitHub token from env var
+GITHUB_TOKEN =  "" # os.environ.get('GITHUB_TOKEN')  # Retrieve GitHub token from env var
 headers = {}
 if GITHUB_TOKEN:
     headers['Authorization'] = f'token {GITHUB_TOKEN}'
