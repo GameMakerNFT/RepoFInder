@@ -10,7 +10,7 @@ import df
 # ================================
 # GitHub API Setup 
 # ================================
-TOKEN = "SS"
+GITHUB_TOKEN = "SS"
 
 if GITHUB_TOKEN:
     headers['Authorization'] = f'token {GITHUB_TOKEN}'
