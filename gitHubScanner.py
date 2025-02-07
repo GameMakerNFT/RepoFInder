@@ -10,8 +10,8 @@ import df
 # ================================
 # GitHub API Setup 
 # ================================
-GITHUB_TOKEN =  df.gethubtoken # os.environ.get('GITHUB_TOKEN')  # Retrieve GitHub token from env var
-headers = {}
+TOKEN = "SS"
+
 if GITHUB_TOKEN:
     headers['Authorization'] = f'token {GITHUB_TOKEN}'
 
