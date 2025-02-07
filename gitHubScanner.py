@@ -5,11 +5,12 @@ import requests
 import os
 from datetime import datetime
 import csv
+import df
 
 # ================================
 # GitHub API Setup 
 # ================================
-GITHUB_TOKEN =  "" # os.environ.get('GITHUB_TOKEN')  # Retrieve GitHub token from env var
+GITHUB_TOKEN =  df.gethubtoken # os.environ.get('GITHUB_TOKEN')  # Retrieve GitHub token from env var
 headers = {}
 if GITHUB_TOKEN:
     headers['Authorization'] = f'token {GITHUB_TOKEN}'
